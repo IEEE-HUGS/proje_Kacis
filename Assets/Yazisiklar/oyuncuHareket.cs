@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OyuncuHareket : MonoBehaviour
+public class oyuncuHareket : MonoBehaviour
 {
 
     public float hareketHizi = 5f;

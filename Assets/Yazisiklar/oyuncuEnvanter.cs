@@ -5,7 +5,7 @@ using UnityEngine;
 public class oyuncuEnvanter : MonoBehaviour
 {
 
-    public GameObject[] envanter = new GameObject[0];
+    public GameObject[] envanter = new GameObject[1];
 
     public void EsyaEkle(GameObject esya)
     {
