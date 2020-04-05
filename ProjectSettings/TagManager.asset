@@ -6,6 +6,7 @@ TagManager:
   tags:
   - etkiObje
   - etkiEsya
+  - etkiManken
   layers:
   - Default
   - TransparentFX
