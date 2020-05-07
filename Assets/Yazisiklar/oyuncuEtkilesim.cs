@@ -6,43 +6,50 @@ public class oyuncuEtkilesim : MonoBehaviour
 {
 
     public GameObject etkiAlanObje = null; //etkileşim alanındaki obje
-    public objeEtkilesim oyuncuEtkilesimYazisik = null; //etkileşim alanındaki obje [yazışığı (=script)] buradaki amaç, kod içerisinde diğer yazışıklara erişim sağlamak
+    public objeEtkilesim objeEtkilesimYazisik = null; //etkileşim alanındaki obje [yazışığı (=script)] buradaki amaç, kod içerisinde diğer yazışıklara erişim sağlamak
     public oyuncuEnvanter oyuncuEnvanterYazisik;
+    public GameObject tornavidaGorunurlugu;
 
+    void Start()
+    {
+        tornavidaGorunurlugu.gameObject.SetActive(false);
+    }
     void Update()
     {
         if (Input.GetButtonDown("Etkiles") && etkiAlanObje) //etkleşim butonuna basılmış ve etki alanında bir obje varsa
         {
-            if (oyuncuEtkilesimYazisik.envantereAlinabilir)
+            if (objeEtkilesimYazisik.envantereAlinabilir)
             {
                 oyuncuEnvanterYazisik.EsyaEkle(etkiAlanObje);
             }
         }
         //açılabilir bir obje mi kontrol et
-        if (Input.GetButtonDown("Etkiles") && oyuncuEtkilesimYazisik.acilabilir)
+        if (Input.GetButtonDown("Etkiles") && objeEtkilesimYazisik.acilabilir)
         {
             //kilitli mi kontrol et
-            if (oyuncuEtkilesimYazisik.kilitli)
+            if (objeEtkilesimYazisik.kilitli)
             {
                 //açmak için gerekli objeye oyuncu sahip mi, kontrol et
                 //aranan obje için envanteri ara, bulunursa kilidi aç
-                if (oyuncuEnvanterYazisik.EsyaBul(oyuncuEtkilesimYazisik.gerekliEsya))
+                if (oyuncuEnvanterYazisik.EsyaBul(objeEtkilesimYazisik.gerekliEsya))
                 {
                     //eşya bulundu, aç
                     oyuncuEnvanterYazisik.EsyaSil();
-                    oyuncuEtkilesimYazisik.kilitli = false;
-                    Debug.Log(oyuncuEtkilesimYazisik.name + " kilidi açıldı.");
+                    objeEtkilesimYazisik.kilitli = false;
+                    Debug.Log(objeEtkilesimYazisik.name + " kilidi açıldı.");
+                    tornavidaGorunurlugu.gameObject.SetActive(true);
+
                 }
                 else
                 {
-                    Debug.Log(oyuncuEtkilesimYazisik.name + " hala kilitli.");
+                    Debug.Log(objeEtkilesimYazisik.name + " hala kilitli.");
                 }
             }
             else
             {
                 //obje kilitli değil, açmaya geçebiliriz
-                Debug.Log(oyuncuEtkilesimYazisik.name + " açıldı.");
-                oyuncuEtkilesimYazisik.Ac();
+                Debug.Log(objeEtkilesimYazisik.name + " açıldı.");
+                objeEtkilesimYazisik.Ac();
             }
         }
     }
@@ -53,7 +60,7 @@ public class oyuncuEtkilesim : MonoBehaviour
         {
             Debug.Log(etkilesilen.name);
             etkiAlanObje = etkilesilen.gameObject; //etkileşilen objeyi "etki alanındaki obje" olarak tanımla
-            oyuncuEtkilesimYazisik = etkiAlanObje.GetComponent<objeEtkilesim>();
+            objeEtkilesimYazisik = etkiAlanObje.GetComponent<objeEtkilesim>();
         }
     }
 
