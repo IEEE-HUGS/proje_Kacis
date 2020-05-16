@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - etkiObje
-  - etkiEsya
+  - etkiManken
+  - etkiArayuz
   layers:
   - Default
   - TransparentFX
