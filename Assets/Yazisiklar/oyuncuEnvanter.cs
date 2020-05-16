@@ -19,9 +19,10 @@ public class oyuncuEnvanter : MonoBehaviour
                 envanter[i] = esya;
                 Debug.Log(esya.name + " eklendi.");
                 esyaEklendi = true;
-                if (esya == tornavidaObje)
+                if (esya.name == tornavidaObje.name)
                 {
                     oyuncuEtkilesimYazisik.tornavidaAlindi = true;
+                    UnityEngine.Debug.Log("TORNAVİDA ALINDI!");
                 }
                 esya.SendMessage("GorunmezKil");
                 break;

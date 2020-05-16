@@ -72,6 +72,4 @@ public class arayuzEtkilesim : MonoBehaviour
             oyuncuHareketYazisik.enabled = true; //arayüzü kapatınca karakterin hareket etme yetisini geri kazandırır.
         }
     }
-
-
 }

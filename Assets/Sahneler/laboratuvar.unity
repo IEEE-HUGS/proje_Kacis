@@ -2681,7 +2681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9705d4f9d7e516142a9a08711d041036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OyunKontrolYazisik: {fileID: 0}
+  OyunKontrolYazisik: {fileID: 1472965758}
   oyuncuHareketYazisik: {fileID: 493666993}
   oyuncuEtkilesimYazisik: {fileID: 493666991}
   havalandirmaEkArayuzObjesi: {fileID: 1011657112}
