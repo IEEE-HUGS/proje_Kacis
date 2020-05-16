@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class oyuncuEnvanter : MonoBehaviour
 {
-
+    public oyuncuEtkilesim oyuncuEtkilesimYazisik;
+    public GameObject tornavidaObje;
     public GameObject[] envanter = new GameObject[1];
 
     public void EsyaEkle(GameObject esya)
@@ -18,6 +19,10 @@ public class oyuncuEnvanter : MonoBehaviour
                 envanter[i] = esya;
                 Debug.Log(esya.name + " eklendi.");
                 esyaEklendi = true;
+                if (esya == tornavidaObje)
+                {
+                    oyuncuEtkilesimYazisik.tornavidaAlindi = true;
+                }
                 esya.SendMessage("GorunmezKil");
                 break;
             }

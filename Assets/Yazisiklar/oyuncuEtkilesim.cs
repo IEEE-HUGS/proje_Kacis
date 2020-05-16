@@ -14,20 +14,24 @@ public class oyuncuEtkilesim : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Etkiles") && etkiAlanObje) //etkleşim butonuna basılmış ve etki alanında bir obje varsa
+        if (Input.GetButtonDown("Etkiles") && etkiAlanObje) //etkileşim butonuna (e) basılmış ve etki alanında bir obje varsa
         {
-            if (objeEtkilesimYazisik != null)
-                if (objeEtkilesimYazisik.envantereAlinabilir)
+            if (objeEtkilesimYazisik != null) //şayet etkileşilen obje bir "obje etkileşim yazışığına" sahipse
+                if (objeEtkilesimYazisik.envantereAlinabilir) //ve eğer etkileşilen obje "envantere alınabilir" ise
                 {
-                    oyuncuEnvanterYazisik.EsyaEkle(etkiAlanObje);
+                    oyuncuEnvanterYazisik.EsyaEkle(etkiAlanObje); //etki alanındaki objeyi "envantere ekle"
                 }
-            if (arayuzEtkilesimYazisik != null)
-                if (arayuzEtkilesimYazisik.buBirArayuz)
+            if (arayuzEtkilesimYazisik != null) //şayet etkileşilen obje bir "arayüz etkileşim yazışığına" sahipse
+            {
+                arayuzEtkilesimYazisik.ArayuzAc(); //arayuzEtkilesim yazışığında bulunan "ArayuzAc" fonksiyonunu çalıştır. (bu fonksiyon içerisinde tüm arayüz tiplerini barındırdığından ayrıyeten bir arayüz belirleme işlemi yapmamıza gerek yok.)
+                if (Input.GetButtonDown("ESC")) //ve eğer ESC butonuna (escape) basılmışsa
                 {
-                    UnityEngine.Debug.Log(arayuzEtkilesimYazisik.name + " ile etkileşim kuruldu.");
-                    arayuzEtkilesimYazisik.ArayuzAc();
+                    arayuzEtkilesimYazisik.ArayuzKapa(); //arayuzEtkilesim yazışığındaki "ArayuzKapa" fonksiyonunu çalıştır.
                 }
+            }
+
         }
+
         //açılabilir bir obje mi kontrol et
         if (Input.GetButtonDown("Etkiles") && objeEtkilesimYazisik.acilabilir)
         {

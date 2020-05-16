@@ -816,9 +816,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9705d4f9d7e516142a9a08711d041036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buBirArayuz: 1
+  OyunKontrolYazisik: {fileID: 0}
+  oyuncuHareketYazisik: {fileID: 0}
+  oyuncuEtkilesimYazisik: {fileID: 493666991}
+  havalandirmaEkArayuzObjesi: {fileID: 1011657112}
+  havalandirmaKanaliObjesi: {fileID: 1446549616}
+  vidaObjeleri:
+  - {fileID: 639420356}
+  - {fileID: 1351275427}
+  - {fileID: 1105163009}
+  - {fileID: 1240686232}
   havalandirma: 1
-  havalandirmaArayuzObjesi: {fileID: 1011657112}
+  havalandirmaCalisiyor: 1
 --- !u!1 &290468654
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +976,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444883807}
+  - {fileID: 1446549617}
   m_Father: {fileID: 1011657116}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1201,7 +1211,7 @@ GameObject:
   - component: {fileID: 444883809}
   - component: {fileID: 444883808}
   m_Layer: 5
-  m_Name: "havaland\u0131rma.kanal\u0131.\u0131zgara"
+  m_Name: havalandirma.kanali.izgara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1459,6 +1469,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 996785636}
+  - {fileID: 1472965757}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1491,6 +1502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698227a661af408499f1522896c448b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oyuncuEtkilesimYazisik: {fileID: 493666991}
+  tornavidaObje: {fileID: 290468654}
   envanter:
   - {fileID: 0}
 --- !u!114 &493666993
@@ -1931,7 +1944,7 @@ GameObject:
   - component: {fileID: 639420359}
   - component: {fileID: 639420358}
   m_Layer: 5
-  m_Name: vida.buton
+  m_Name: vidaButon0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1999,7 +2012,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 639420359}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1011657117}
+        m_MethodName: VidaSokme
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: '"VidaSokme", 1;'
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &639420359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2015,7 +2039,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2557,6 +2581,7 @@ GameObject:
   - component: {fileID: 1011657115}
   - component: {fileID: 1011657114}
   - component: {fileID: 1011657113}
+  - component: {fileID: 1011657117}
   m_Layer: 5
   m_Name: havalandirma.ek.arayuz
   m_TagString: Untagged
@@ -2644,6 +2669,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1011657117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011657112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9705d4f9d7e516142a9a08711d041036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OyunKontrolYazisik: {fileID: 0}
+  oyuncuHareketYazisik: {fileID: 493666993}
+  oyuncuEtkilesimYazisik: {fileID: 493666991}
+  havalandirmaEkArayuzObjesi: {fileID: 1011657112}
+  havalandirmaKanaliObjesi: {fileID: 1446549616}
+  vidaObjeleri:
+  - {fileID: 639420356}
+  - {fileID: 1351275427}
+  - {fileID: 1105163009}
+  - {fileID: 1240686232}
+  havalandirma: 1
+  havalandirmaCalisiyor: 1
 --- !u!1 &1105163009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,7 +2706,7 @@ GameObject:
   - component: {fileID: 1105163012}
   - component: {fileID: 1105163011}
   m_Layer: 5
-  m_Name: vida.buton3
+  m_Name: vidaButon2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2725,7 +2774,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1105163012}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1011657117}
+        m_MethodName: VidaSokme
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1105163012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2985,7 +3045,7 @@ GameObject:
   - component: {fileID: 1240686235}
   - component: {fileID: 1240686234}
   m_Layer: 5
-  m_Name: vida.buton4
+  m_Name: vidaButon3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3053,7 +3113,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1240686235}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1011657117}
+        m_MethodName: VidaSokme
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1240686235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3283,7 +3354,7 @@ GameObject:
   - component: {fileID: 1351275430}
   - component: {fileID: 1351275429}
   m_Layer: 5
-  m_Name: vida.buton2
+  m_Name: vidaButon1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3351,7 +3422,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1351275430}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1011657117}
+        m_MethodName: VidaSokme
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1351275430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3463,6 +3545,179 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397438086}
   m_CullTransparentMesh: 0
+--- !u!1 &1446549616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1446549617}
+  - component: {fileID: 1446549619}
+  - component: {fileID: 1446549618}
+  - component: {fileID: 1446549620}
+  m_Layer: 5
+  m_Name: havalandirma.kanali
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1446549617
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446549616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 316549169}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.514, y: 0.57}
+  m_SizeDelta: {x: 186, y: 113}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1446549618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446549616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 73379e5f90116c841b4e5c687d7ca052, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1446549619
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446549616}
+  m_CullTransparentMesh: 0
+--- !u!114 &1446549620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446549616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 0.6901961, g: 0.6901961, b: 0.6901961, a: 0}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1446549618}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1011657117}
+        m_MethodName: HavalandirmayaGir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1472965756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472965757}
+  - component: {fileID: 1472965758}
+  m_Layer: 0
+  m_Name: OyunKontrol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1472965757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472965756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 493666990}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1472965758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472965756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ece76c53be196c4e9fdbb385126795c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oyunBitti: 0
+  soguktanOldun: 0
+  yakalandin: 0
+  kactin: 0
 --- !u!1 &1532095064
 GameObject:
   m_ObjectHideFlags: 0
