@@ -18,7 +18,7 @@ public class oyuncuEnvanter : MonoBehaviour
                 envanter[i] = esya;
                 Debug.Log(esya.name + " eklendi.");
                 esyaEklendi = true;
-                esya.SendMessage("EtkilesimdeBulun");
+                esya.SendMessage("GorunmezKil");
                 break;
             }
         }
