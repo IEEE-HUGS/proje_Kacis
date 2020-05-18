@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Sahneler/laboratuvar.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: "Assets/Sahneler/oyunBitti_\xF6ld\xFCn.unity"
+    path: Assets/Sahneler/oyunBitti_oldun.unity
     guid: a78e20385e5f0f24a81f441d0ef31889
   m_configObjects: {}

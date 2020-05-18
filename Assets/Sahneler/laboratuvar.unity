@@ -695,6 +695,139 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &245007735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 245007736}
+  - component: {fileID: 245007737}
+  - component: {fileID: 245007738}
+  - component: {fileID: 245007739}
+  m_Layer: 0
+  m_Name: havalandirma.deligi
+  m_TagString: etkiArayuz
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &245007736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245007735}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.09, y: -0.616, z: 1.1543638}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 559904733}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &245007737
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245007735}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 4a60d1fbff5dd094f8219714d4557fe1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.02, y: 0.35}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &245007738
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245007735}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.073135674, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.02, y: 0.35}
+    newSize: {x: 0.02, y: 0.35}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16627133, y: 0.35}
+  m_EdgeRadius: 0
+--- !u!114 &245007739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245007735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9705d4f9d7e516142a9a08711d041036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OyunKontrolYazisik: {fileID: 0}
+  oyuncuHareketYazisik: {fileID: 0}
+  oyuncuEtkilesimYazisik: {fileID: 493666991}
+  havalandirmaEkArayuzObjesi: {fileID: 1011657112}
+  havalandirmaKanaliObjesi: {fileID: 1446549616}
+  vidaObjeleri:
+  - {fileID: 639420356}
+  - {fileID: 1351275427}
+  - {fileID: 1105163009}
+  - {fileID: 1240686232}
+  havalandirma: 1
+  havalandirmaCalisiyor: 1
 --- !u!1 &290468654
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,10 +873,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fedbe2d1151db947a4b6998d7ef124c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "envantereAl\u0131nabilir": 0
-  "a\xE7\u0131labilir": 0
+  envantereAlinabilir: 1
+  acilabilir: 0
   kilitli: 0
-  "alet\xC7antas\u0131": 0
+  aletCantasi: 0
   gerekliObje: {fileID: 0}
   tornavidaObje: {fileID: 0}
   anim: {fileID: 0}
@@ -813,38 +946,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &295646956
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 295646957}
-  m_Layer: 0
-  m_Name: "aray\xFCzler"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &295646957
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295646956}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.39845982, y: 0.036517955, z: -108.655495}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1011657116}
-  - {fileID: 366721536}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &316549168
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,7 +1057,7 @@ Transform:
   - {fileID: 1244483898}
   - {fileID: 1005562542}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &366721532
 GameObject:
@@ -971,7 +1072,7 @@ GameObject:
   - component: {fileID: 366721534}
   - component: {fileID: 366721533}
   m_Layer: 0
-  m_Name: "saya\xE7.aray\xFCz"
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1049,8 +1150,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1319261630}
-  m_Father: {fileID: 295646957}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1195,7 +1296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &444883806
 GameObject:
@@ -1469,7 +1570,7 @@ Transform:
   - {fileID: 996785636}
   - {fileID: 1472965757}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &493666991
 MonoBehaviour:
@@ -1480,14 +1581,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 493666988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef9b030c7b4dbd645958db394434261f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cf3fe1c01e0d8b49ab04b19d185c6a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "tornavidaAl\u0131nd\u0131": 0
+  tornavidaAlindi: 0
   etkiAlanObje: {fileID: 0}
-  "objeEtkile\u015FimYaz\u0131\u015F\u0131k": {fileID: 0}
-  "aray\xFCzEtkile\u015FimYaz\u0131\u015F\u0131k": {fileID: 0}
-  "oyuncuEnvanterYaz\u0131\u015F\u0131k": {fileID: 493666992}
+  objeEtkilesimYazisik: {fileID: 0}
+  arayuzEtkilesimYazisik: {fileID: 0}
+  oyuncuEnvanterYazisik: {fileID: 493666992}
 --- !u!114 &493666992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,7 +1601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698227a661af408499f1522896c448b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "oyuncuEtkile\u015FimYaz\u0131\u015F\u0131k": {fileID: 493666991}
+  oyuncuEtkilesimYazisik: {fileID: 493666991}
   tornavidaObje: {fileID: 290468654}
   envanter:
   - {fileID: 0}
@@ -1516,9 +1617,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95450bbbfcb46d843be6d907ee6b90d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "hareketH\u0131z\u0131": 5
+  hareketHizi: 0.3
   kc: {fileID: 493666994}
-  "animat\xF6r": {fileID: 493666995}
+  animator: {fileID: 493666995}
 --- !u!50 &493666994
 Rigidbody2D:
   serializedVersion: 4
@@ -1613,7 +1714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789162547edd39b4d85b5c24fe084c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "oyuncu\u0130\u015Fleyici": {fileID: 493666989}
+  oyuncuIsleyici: {fileID: 493666989}
 --- !u!1 &521988092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,9 +1945,9 @@ Transform:
   - {fileID: 84068809}
   - {fileID: 1678549805}
   - {fileID: 1534698322}
-  - {fileID: 1993796681}
+  - {fileID: 245007736}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604194473
 GameObject:
@@ -2581,8 +2682,8 @@ GameObject:
   - component: {fileID: 1011657113}
   - component: {fileID: 1011657117}
   m_Layer: 5
-  m_Name: "havaland\u0131rma.ek.aray\xFCz"
-  m_TagString: "etkiAray\xFCz"
+  m_Name: havalandirma.ek.arayuz
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2654,17 +2755,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011657112}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 108.655495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 316549169}
-  m_Father: {fileID: 295646957}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.39845982, y: -0.036517955}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1011657117
@@ -2676,21 +2777,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1011657112}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3643a97b687e3864cb47e0c5af80bfec, type: 3}
+  m_Script: {fileID: 11500000, guid: 9705d4f9d7e516142a9a08711d041036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "buBirHavaland\u0131rma": 0
-  "OyunKontrolYaz\u0131\u015F\u0131k": {fileID: 1472965758}
-  "oyuncuHareketYaz\u0131\u015F\u0131k": {fileID: 493666993}
-  "oyuncuEtkile\u015FimYazisik": {fileID: 493666991}
-  "havaland\u0131rma\xC7al\u0131\u015F\u0131yor": 1
-  "havaland\u0131rmaEkAray\xFCzObjesi": {fileID: 1011657112}
-  "havaland\u0131rmaKanal\u0131Objesi": {fileID: 1446549616}
+  OyunKontrolYazisik: {fileID: 1472965758}
+  oyuncuHareketYazisik: {fileID: 493666993}
+  oyuncuEtkilesimYazisik: {fileID: 493666991}
+  havalandirmaEkArayuzObjesi: {fileID: 1011657112}
+  havalandirmaKanaliObjesi: {fileID: 1446549616}
   vidaObjeleri:
   - {fileID: 639420356}
   - {fileID: 1351275427}
   - {fileID: 1105163009}
   - {fileID: 1240686232}
+  havalandirma: 1
+  havalandirmaCalisiyor: 1
 --- !u!1 &1105163009
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,10 +3124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fedbe2d1151db947a4b6998d7ef124c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "envantereAl\u0131nabilir": 0
-  "a\xE7\u0131labilir": 0
+  envantereAlinabilir: 0
+  acilabilir: 1
   kilitli: 1
-  "alet\xC7antas\u0131": 0
+  aletCantasi: 1
   gerekliObje: {fileID: 2136663095}
   tornavidaObje: {fileID: 290468654}
   anim: {fileID: 0}
@@ -3389,8 +3490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb5f6c6441c29c4fb611913ee90dc1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "Saya\xE7Ba\u015Flang\u0131\xE7": 120
-  "OyunKontrolYaz\u0131\u015F\u0131k": {fileID: 0}
   "Saya\xE7UI": {fileID: 1319261632}
 --- !u!114 &1319261632
 MonoBehaviour:
@@ -3807,10 +3906,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oyunBitti: 0
-  "so\u011Fuktan\xD6ld\xFCn": 0
-  "yakaland\u0131n": 0
-  "ka\xE7t\u0131n": 0
-  "s\xFCreBitti": 0
+  soguktanOldun: 0
+  yakalandin: 0
+  kactin: 0
 --- !u!1 &1532095064
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,7 +4158,7 @@ Transform:
   - {fileID: 112077193}
   - {fileID: 1532095065}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1608461675
 GameObject:
@@ -4198,7 +4296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678549804
 GameObject:
@@ -4886,139 +4984,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975236679}
   m_CullTransparentMesh: 0
---- !u!1 &1993796680
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1993796681}
-  - component: {fileID: 1993796684}
-  - component: {fileID: 1993796683}
-  - component: {fileID: 1993796682}
-  m_Layer: 0
-  m_Name: "havaland\u0131rma.deli\u011Fi"
-  m_TagString: "etkiAray\xFCz"
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1993796681
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993796680}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.09, y: -0.616, z: 1.1543638}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 559904733}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1993796682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993796680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3643a97b687e3864cb47e0c5af80bfec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "buBirHavaland\u0131rma": 0
-  "OyunKontrolYaz\u0131\u015F\u0131k": {fileID: 1472965758}
-  "oyuncuHareketYaz\u0131\u015F\u0131k": {fileID: 493666993}
-  "oyuncuEtkile\u015FimYazisik": {fileID: 493666991}
-  "havaland\u0131rma\xC7al\u0131\u015F\u0131yor": 1
-  "havaland\u0131rmaEkAray\xFCzObjesi": {fileID: 1011657112}
-  "havaland\u0131rmaKanal\u0131Objesi": {fileID: 1993796680}
-  vidaObjeleri:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!61 &1993796683
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993796680}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.073135674, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.02, y: 0.35}
-    newSize: {x: 0.02, y: 0.35}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.16627133, y: 0.35}
-  m_EdgeRadius: 0
---- !u!212 &1993796684
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993796680}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 4a60d1fbff5dd094f8219714d4557fe1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.02, y: 0.35}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &2109041686
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,10 +5203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fedbe2d1151db947a4b6998d7ef124c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "envantereAl\u0131nabilir": 0
-  "a\xE7\u0131labilir": 0
+  envantereAlinabilir: 1
+  acilabilir: 0
   kilitli: 0
-  "alet\xC7antas\u0131": 0
+  aletCantasi: 0
   gerekliObje: {fileID: 0}
   tornavidaObje: {fileID: 0}
   anim: {fileID: 0}
