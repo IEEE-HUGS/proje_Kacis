@@ -6,7 +6,7 @@ TagManager:
   tags:
   - etkiObje
   - etkiManken
-  - etkiArayuz
+  - "etkiAray\xFCz"
   layers:
   - Default
   - TransparentFX

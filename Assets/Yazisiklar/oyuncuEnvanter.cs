@@ -4,48 +4,48 @@ using UnityEngine;
 
 public class oyuncuEnvanter : MonoBehaviour
 {
-    public oyuncuEtkilesim oyuncuEtkilesimYazisik;
+    public oyuncuEtkileşim oyuncuEtkileşimYazışık;
     public GameObject tornavidaObje;
     public GameObject[] envanter = new GameObject[1];
 
-    public void EsyaEkle(GameObject esya)
+    public void EşyaEkle(GameObject eşya)
     {
-        bool esyaEklendi = false;
+        bool eşyaEklendi = false;
 
         for (int i=0; i < envanter.Length; i++) //envanterdeki ilk boş slotu bul
         {
             if(envanter[i] == null)
             {
-                envanter[i] = esya;
-                Debug.Log(esya.name + " eklendi.");
-                esyaEklendi = true;
-                if (esya.name == tornavidaObje.name)
+                envanter[i] = eşya;
+                Debug.Log(eşya.name + " eklendi.");
+                eşyaEklendi = true;
+                if (eşya.name == tornavidaObje.name)
                 {
-                    oyuncuEtkilesimYazisik.tornavidaAlindi = true;
+                    oyuncuEtkileşimYazışık.tornavidaAlındı = true;
                     UnityEngine.Debug.Log("TORNAVİDA ALINDI!");
                 }
-                esya.SendMessage("GorunmezKil");
+                eşya.SendMessage("GörünmezKıl");
                 break;
             }
         }
 
-        if (!esyaEklendi) //envanter dolu
+        if (!eşyaEklendi) //envanter dolu
         {
             Debug.Log("Envanter dolu. Eşya eklenemedi.");
         }
     }
 
-    public void EsyaSil()
+    public void EşyaSil()
     {
         envanter = new GameObject[1];
         Debug.Log("Eşya silindi");
     }
 
-    public bool EsyaBul(GameObject esya)
+    public bool EşyaBul(GameObject eşya)
     {
         for (int i = 0; i < envanter.Length; i++)
         {
-            if(envanter[i] == esya)
+            if(envanter[i] == eşya)
             {
                 //eşya bulundu
                 return true;
