@@ -5,11 +5,11 @@ using UnityEngine;
 public class oyuncuHareket : MonoBehaviour
 {
 
-    public float hareketHizi = 5f;
+    public float hareketHızı = 5f;
 
     public Rigidbody2D kc;
 
-    public Animator animator;
+    public Animator animatör;
 
 
     Vector2 hareket;
@@ -20,16 +20,16 @@ public class oyuncuHareket : MonoBehaviour
         hareket.x = Input.GetAxisRaw("Horizontal");
         hareket.y = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("Yatay", hareket.x);
-        animator.SetFloat("Dikey", hareket.y);
-        animator.SetFloat("Hız", hareket.sqrMagnitude);
+        animatör.SetFloat("Yatay", hareket.x);
+        animatör.SetFloat("Dikey", hareket.y);
+        animatör.SetFloat("Hız", hareket.sqrMagnitude);
 
     }
 
     void FixedUpdate() //Hareket kodları 
     {
 
-        kc.MovePosition(kc.position + hareket * hareketHizi * Time.fixedDeltaTime);
+        kc.MovePosition(kc.position + hareket * hareketHızı * Time.fixedDeltaTime);
         
 
     }
