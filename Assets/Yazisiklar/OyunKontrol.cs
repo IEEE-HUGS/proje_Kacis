@@ -8,15 +8,16 @@ public class OyunKontrol : MonoBehaviour
     public bool oyunBitti = false;
 
     //oyunun bitme sebepleri
-    public bool soguktanOldun = false;
-    public bool yakalandin = false;
-    public bool kactin = false;
+    public bool soğuktanÖldün = false;
+    public bool yakalandın = false;
+    public bool kaçtın = false;
+    public bool süreBitti = false;
 
     public void OyunuBitir()
     {
-        if (soguktanOldun == true || yakalandin == true);
+        if (soğuktanÖldün || yakalandın || süreBitti)
         {
-            SceneManager.LoadScene("oyunBitti_oldun");
+            SceneManager.LoadScene("oyunBitti_öldün");
         }
     }
 }
