@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SayaçOyunBitti : MonoBehaviour
+public class sayaç : MonoBehaviour
 {
-    int SayaçBaşlangıç = 120; //Sayacın başlangıç değerini belirleme saniye bazında
+    public int SayaçBaşlangıç = 120; //Sayacın başlangıç değerini belirleme saniye bazında
+    public OyunKontrol OyunKontrolYazışık; //süreBitti değişkenini buradan değiştirecek ve oyunun bitmesini sağlayacağız
     public Text SayaçUI; 
 
 
@@ -30,13 +31,7 @@ public class SayaçOyunBitti : MonoBehaviour
         {
             SayaçUI.text = "Oyun Bitti\nKaçmayı Başaramadınız (Duruma göre-Dikkatli ol Hoca geliyor-)"; //Texte yazdırır
             Debug.Log("Oyun Bitti\nKaçmayı Başaramadınız (Duruma göre-Dikkatli ol Hoca geliyor-)"); //Sayaç 0 olduğu durumda konsola yazdırır
+            OyunKontrolYazışık.süreBitti = true;
         }
-    }
-
-
-
-    void Update()
-    {
-        
     }
 }
