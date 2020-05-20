@@ -95,7 +95,7 @@ public class oyuncuEtkileşim : MonoBehaviour
             }
         }
 
-        if (etkileşilen.CompareTag("etkiArayuz"))
+        if (etkileşilen.CompareTag("etkiArayüz"))
         {
             if(etkileşilen.gameObject == etkiAlanObje) //en son etki alanındaki obje, "etkileşilen obje" olarak tanımlanan obje ise
             {
