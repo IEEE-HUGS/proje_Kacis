@@ -8,8 +8,10 @@ public class objeEtkileşim : MonoBehaviour
     public bool açılabilir;                 //eğer "doğru" ise obje açılabilir.
     public bool kilitli;                    //eğer "doğru" ise obje kilitlidir ve etkileşime geçilemez.
     public bool aletÇantası;                //eğer "doğru" ise obje, alet çantasıdır.
+    public bool elFeneri;
     public GameObject gerekliObje;          //etkileşim için gerekli eşya
     public GameObject tornavidaObje;
+    public GameObject elFeneriYazışıkObjesi;
 
     public Animator anim;  
         

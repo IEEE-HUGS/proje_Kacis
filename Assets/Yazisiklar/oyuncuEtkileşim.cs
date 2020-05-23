@@ -19,6 +19,10 @@ public class oyuncuEtkileşim : MonoBehaviour
             if (objeEtkileşimYazışık != null) //şayet etkileşilen obje bir "obje etkileşim yazışığına" sahipse
                 if (objeEtkileşimYazışık.envantereAlınabilir) //ve eğer etkileşilen obje "envantere alınabilir" ise
                 {
+                    if (objeEtkileşimYazışık.elFeneri) //el feneri ise
+                    {
+                        objeEtkileşimYazışık.elFeneriYazışıkObjesi.gameObject.SetActive(true); //el feneri yazışığını aktive et
+                    }
                     oyuncuEnvanterYazışık.EşyaEkle(etkiAlanObje); //etki alanındaki objeyi "envantere ekle"
                 }
             if (arayüzEtkileşimYazışık != null) //şayet etkileşilen obje bir "arayüz etkileşim yazışığına" sahipse
