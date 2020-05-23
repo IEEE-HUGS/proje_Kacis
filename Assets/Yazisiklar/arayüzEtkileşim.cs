@@ -6,8 +6,7 @@ using UnityEngine.EventSystems;
 
 public class arayüzEtkileşim : MonoBehaviour
 {
-    public bool buBirHavalandırma;
-    public bool buBirBilgisayar;
+    public bool[] buBir = new bool[3]; // 0 -> Havalandırma; 1 -> Bilgisayar; 2 -> Şalter
 
     public OyunKontrol OyunKontrolYazışık;
     public oyuncuHareket oyuncuHareketYazışık;
@@ -61,9 +60,9 @@ public class arayüzEtkileşim : MonoBehaviour
     //bilgisayar
     public string bilgisayarınŞifresi;
     public GameObject bilgisayarEkArayüzObjesi;
+    public GameObject bilgisayarObjesi; //bilgisayar ekranının objesi. bu sayede arayüze erişim, oyuncu etkileşimi sağlanacak.
     public GameObject şifreGirmeObjesi;
     public GameObject seçeneklerObjesi;
-    //public Button bilgisayar_havalandırmaButonu;
 
     public void ŞifreKontrol()
     {
@@ -85,13 +84,13 @@ public class arayüzEtkileşim : MonoBehaviour
     }
 
 
-    public void ArayüzAç()
+    public void ArayüzAç(bool[] kontrol) //etki alanındaki obje adı
     {
-        if (buBirHavalandırma)
+        if (kontrol[0])
         {
             havalandırmaEkArayüzObjesi.gameObject.SetActive(true); //arayüzü görünür kılar
         }
-        if (buBirBilgisayar)
+        if (kontrol[1])
         {
             bilgisayarEkArayüzObjesi.gameObject.SetActive(true); //arayüzü görünür kılar
         }
@@ -100,10 +99,10 @@ public class arayüzEtkileşim : MonoBehaviour
 
     public void ArayüzKapa()
     {
-        if (buBirHavalandırma)
-        {
-            havalandırmaEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
-            oyuncuHareketYazışık.hareketHızı = oyuncuHareketYazışık.varsayılanHareketHızı; //arayüzü kapatınca karakterin hareket etme yetisini geri kazandırır.
-        }
+        havalandırmaEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
+        bilgisayarEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
+
+        oyuncuHareketYazışık.hareketHızı = oyuncuHareketYazışık.varsayılanHareketHızı; //arayüzü kapatınca karakterin hareket etme yetisini geri kazandırır.
     }
+
 }

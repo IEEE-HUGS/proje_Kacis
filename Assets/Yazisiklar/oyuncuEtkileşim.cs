@@ -23,13 +23,13 @@ public class oyuncuEtkileşim : MonoBehaviour
                 }
             if (arayüzEtkileşimYazışık != null) //şayet etkileşilen obje bir "arayüz etkileşim yazışığına" sahipse
             {
-                arayüzEtkileşimYazışık.ArayüzAç(); //arayüzEtkileşim yazışığında bulunan "ArayüzAç" fonksiyonunu çalıştır. (bu fonksiyon içerisinde tüm arayüz tiplerini barındırdığından ayrıyeten bir arayüz belirleme işlemi yapmamıza gerek yok.)
-                if (Input.GetButtonDown("ESC")) //ve eğer ESC butonuna (escape) basılmışsa
-                {
-                    arayüzEtkileşimYazışık.ArayüzKapa(); //arayüzEtkileşim yazışığındaki "ArayüzKapa" fonksiyonunu çalıştır.
-                }
+                UnityEngine.Debug.Log(arayüzEtkileşimYazışık.name);
+                arayüzEtkileşimYazışık.ArayüzAç(arayüzEtkileşimYazışık.buBir); //arayüzEtkileşim yazışığında bulunan "ArayüzAç" fonksiyonunu çalıştır. (bu fonksiyon içerisinde tüm arayüz tiplerini barındırdığından ayrıyeten bir arayüz belirleme işlemi yapmamıza gerek yok.)
             }
-
+        }
+        if (Input.GetButtonDown("ESC") && arayüzEtkileşimYazışık != null) //eğer ESC butonuna (escape) basılmışsa
+        {
+            arayüzEtkileşimYazışık.ArayüzKapa(); //arayüzEtkileşim yazışığındaki "ArayüzKapa" fonksiyonunu çalıştır.
         }
 
         //açılabilir bir obje mi kontrol et
