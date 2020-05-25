@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class arayüzEtkileşim : MonoBehaviour
 {
-    public bool buBirHavalandırma;
+    public bool[] buBir = new bool[3]; // 0 -> Havalandırma; 1 -> Bilgisayar; 2 -> Şalter
 
     public OyunKontrol OyunKontrolYazışık;
     public oyuncuHareket oyuncuHareketYazışık;
@@ -55,21 +57,52 @@ public class arayüzEtkileşim : MonoBehaviour
         }
     }
 
-    public void ArayüzAç()
+    //bilgisayar
+    public string bilgisayarınŞifresi;
+    public GameObject bilgisayarEkArayüzObjesi;
+    public GameObject bilgisayarObjesi; //bilgisayar ekranının objesi. bu sayede arayüze erişim, oyuncu etkileşimi sağlanacak.
+    public GameObject şifreGirmeObjesi;
+    public GameObject seçeneklerObjesi;
+
+    public void ŞifreKontrol()
     {
-        if (buBirHavalandırma)
+        Debug.Log("Şifre Kontrol fonksiyonuna yönlendirme yapıldı.");
+        string girdi;
+        girdi = şifreGirmeObjesi.GetComponent<InputField>().text;
+        if (girdi == bilgisayarınŞifresi) 
+        {
+            şifreGirmeObjesi.gameObject.SetActive(false);
+            seçeneklerObjesi.gameObject.SetActive(true);
+        }
+    }
+
+    public void HavalandırmayıKapat()
+    {
+        EventSystem.current.currentSelectedGameObject.GetComponent<Button>().interactable = false; //en son etkileşime geçilen objenin Buton özelliklerine ulaş ve "etkileşime geçilebilir" özelliğini KAPAT
+        havalandırmaÇalışıyor = false;
+        Debug.Log("Havalandırma kapatıldı.");
+    }
+
+
+    public void ArayüzAç(bool[] kontrol) //etki alanındaki obje adı
+    {
+        if (kontrol[0])
         {
             havalandırmaEkArayüzObjesi.gameObject.SetActive(true); //arayüzü görünür kılar
-            oyuncuHareketYazışık.enabled = false; //arayüzü açınca karakterin hareket etmesini engeller.
         }
+        if (kontrol[1])
+        {
+            bilgisayarEkArayüzObjesi.gameObject.SetActive(true); //arayüzü görünür kılar
+        }
+        oyuncuHareketYazışık.hareketHızı = 0f; //arayüzü açınca karakterin hareket etmesini engeller.
     }
 
     public void ArayüzKapa()
     {
-        if (buBirHavalandırma)
-        {
-            havalandırmaEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
-            oyuncuHareketYazışık.enabled = true; //arayüzü kapatınca karakterin hareket etme yetisini geri kazandırır.
-        }
+        havalandırmaEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
+        bilgisayarEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
+
+        oyuncuHareketYazışık.hareketHızı = oyuncuHareketYazışık.varsayılanHareketHızı; //arayüzü kapatınca karakterin hareket etme yetisini geri kazandırır.
     }
+
 }
