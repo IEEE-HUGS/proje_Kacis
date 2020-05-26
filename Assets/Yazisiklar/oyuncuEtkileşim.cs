@@ -52,6 +52,7 @@ public class oyuncuEtkileşim : MonoBehaviour
                     UnityEngine.Debug.Log(objeEtkileşimYazışık.name + " kilidi açıldı.");
                     if (objeEtkileşimYazışık.aletÇantası) //kilidi açılan obje bir alet çantası idi ise içerisindeki "tornavidayı" görünür kıl
                     {
+                        FindObjectOfType<SesKontrol>().Oynat("aletÇantasıAçma");
                         objeEtkileşimYazışık.TornavidayıGörünürKıl(); //alet çantası içindeki tornavidayı görünür kıl
                         objeEtkileşimYazışık.GörünmezKıl(); //kilidi açılan obje görünmez kıl (animasyon hazırlanana kadar bu şekilde kalabilir)
                     }

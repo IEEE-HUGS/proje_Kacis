@@ -21,6 +21,7 @@ public class oyuncuEnvanter : MonoBehaviour
                 eşyaEklendi = true;
                 if (eşya.name == tornavidaObje.name)
                 {
+                    FindObjectOfType<SesKontrol>().Oynat("tornavidaAlma");
                     oyuncuEtkileşimYazışık.tornavidaAlındı = true;
                     UnityEngine.Debug.Log("TORNAVİDA ALINDI!");
                 }
