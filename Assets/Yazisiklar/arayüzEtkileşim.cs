@@ -94,15 +94,24 @@ public class arayüzEtkileşim : MonoBehaviour
         {
             bilgisayarEkArayüzObjesi.gameObject.SetActive(true); //arayüzü görünür kılar
         }
+        if (kontrol[2])
+        {
+            şalterEkArayüzObjesi.gameObject.SetActive(true); //arayüzü görünür kılar
+        }
         oyuncuHareketYazışık.hareketHızı = 0f; //arayüzü açınca karakterin hareket etmesini engeller.
+
     }
 
     public void ArayüzKapa()
     {
         havalandırmaEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
         bilgisayarEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
-
+        şalterEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
         oyuncuHareketYazışık.hareketHızı = oyuncuHareketYazışık.varsayılanHareketHızı; //arayüzü kapatınca karakterin hareket etme yetisini geri kazandırır.
     }
+
+    //Şalter
+    public GameObject şalterEkArayüzObjesi;
+
 
 }

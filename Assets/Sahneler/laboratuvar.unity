@@ -349,9 +349,10 @@ GameObject:
   - component: {fileID: 68664392}
   - component: {fileID: 68664394}
   - component: {fileID: 68664393}
+  - component: {fileID: 68664395}
   m_Layer: 0
   m_Name: "\u015Falter.kapa\u011F\u0131"
-  m_TagString: etkiObje
+  m_TagString: "etkiAray\xFCz"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,7 +431,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.007961363}
@@ -462,6 +463,36 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0031845272, y: -0.05413717}
   m_Size: {x: 0.25636905, y: 0.46336412}
   m_Direction: 0
+--- !u!114 &68664395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68664390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3643a97b687e3864cb47e0c5af80bfec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buBir: 000001
+  "OyunKontrolYaz\u0131\u015F\u0131k": {fileID: 1472965758}
+  "oyuncuHareketYaz\u0131\u015F\u0131k": {fileID: 493666993}
+  "oyuncuEtkile\u015FimYazisik": {fileID: 493666991}
+  "havaland\u0131rma\xC7al\u0131\u015F\u0131yor": 1
+  "havaland\u0131rmaEkAray\xFCzObjesi": {fileID: 0}
+  "havaland\u0131rmaKanal\u0131Objesi": {fileID: 0}
+  vidaObjeleri:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  "bilgisayar\u0131n\u015Eifresi": 
+  "bilgisayarEkAray\xFCzObjesi": {fileID: 0}
+  bilgisayarObjesi: {fileID: 0}
+  "\u015FifreGirmeObjesi": {fileID: 0}
+  "se\xE7eneklerObjesi": {fileID: 0}
+  "\u015FalterEkAray\xFCzObjesi": {fileID: 2086188922}
 --- !u!1 &84068808
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +756,82 @@ MonoBehaviour:
   bilgisayarObjesi: {fileID: 112077192}
   "\u015FifreGirmeObjesi": {fileID: 276782668}
   "se\xE7eneklerObjesi": {fileID: 1053524641}
+  "\u015FalterEkAray\xFCzObjesi": {fileID: 0}
+--- !u!1 &163109246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163109247}
+  - component: {fileID: 163109249}
+  - component: {fileID: 163109248}
+  m_Layer: 5
+  m_Name: "aray\xFCz"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &163109247
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163109246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 786134353}
+  m_Father: {fileID: 2086188923}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &163109248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163109246}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &163109249
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163109246}
+  m_CullTransparentMesh: 0
 --- !u!1 &207985074
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +865,7 @@ RectTransform:
   m_Children:
   - {fileID: 1045678102}
   m_Father: {fileID: 295646957}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -854,6 +961,7 @@ MonoBehaviour:
   bilgisayarObjesi: {fileID: 112077192}
   "\u015FifreGirmeObjesi": {fileID: 276782668}
   "se\xE7eneklerObjesi": {fileID: 1053524641}
+  "\u015FalterEkAray\xFCzObjesi": {fileID: 0}
 --- !u!1 &276782668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,6 +1260,7 @@ Transform:
   m_LocalPosition: {x: 0.39845982, y: 0.036517955, z: -108.655495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2086188923}
   - {fileID: 1011657116}
   - {fileID: 366721536}
   - {fileID: 207985075}
@@ -1494,7 +1603,7 @@ RectTransform:
   m_Children:
   - {fileID: 1319261630}
   m_Father: {fileID: 295646957}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1948,6 +2057,7 @@ MonoBehaviour:
   "oyuncuEtkile\u015FimYaz\u0131\u015F\u0131k": {fileID: 493666991}
   tornavidaObje: {fileID: 290468654}
   envanter:
+  - {fileID: 0}
   - {fileID: 0}
 --- !u!114 &493666993
 MonoBehaviour:
@@ -2765,6 +2875,77 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &786134352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786134353}
+  - component: {fileID: 786134355}
+  - component: {fileID: 786134354}
+  m_Layer: 5
+  m_Name: "\u015Ealter Ekran\u0131"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &786134353
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786134352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 163109247}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &786134354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786134352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 59fe4dc4b16af9545a29a677f46b3b6b, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &786134355
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786134352}
+  m_CullTransparentMesh: 0
 --- !u!1 &828948757
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,7 +3365,7 @@ RectTransform:
   m_Children:
   - {fileID: 316549169}
   m_Father: {fileID: 295646957}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3220,6 +3401,7 @@ MonoBehaviour:
   bilgisayarObjesi: {fileID: 0}
   "\u015FifreGirmeObjesi": {fileID: 0}
   "se\xE7eneklerObjesi": {fileID: 0}
+  "\u015FalterEkAray\xFCzObjesi": {fileID: 0}
 --- !u!1 &1045678101
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,6 +6206,7 @@ MonoBehaviour:
   bilgisayarObjesi: {fileID: 0}
   "\u015FifreGirmeObjesi": {fileID: 0}
   "se\xE7eneklerObjesi": {fileID: 0}
+  "\u015FalterEkAray\xFCzObjesi": {fileID: 0}
 --- !u!61 &1993796683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6185,6 +6368,136 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7623eb0d6c38aa4aaf2f8cfab44e9d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2086188922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086188923}
+  - component: {fileID: 2086188927}
+  - component: {fileID: 2086188926}
+  - component: {fileID: 2086188925}
+  - component: {fileID: 2086188924}
+  m_Layer: 5
+  m_Name: "\u015Falter.ek.aray\xFCz"
+  m_TagString: "etkiAray\xFCz"
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2086188923
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086188922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 163109247}
+  m_Father: {fileID: 295646957}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &2086188924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086188922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3643a97b687e3864cb47e0c5af80bfec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buBir: 000001
+  "OyunKontrolYaz\u0131\u015F\u0131k": {fileID: 1472965758}
+  "oyuncuHareketYaz\u0131\u015F\u0131k": {fileID: 493666993}
+  "oyuncuEtkile\u015FimYazisik": {fileID: 493666991}
+  "havaland\u0131rma\xC7al\u0131\u015F\u0131yor": 1
+  "havaland\u0131rmaEkAray\xFCzObjesi": {fileID: 0}
+  "havaland\u0131rmaKanal\u0131Objesi": {fileID: 0}
+  vidaObjeleri:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  "bilgisayar\u0131n\u015Eifresi": 
+  "bilgisayarEkAray\xFCzObjesi": {fileID: 0}
+  bilgisayarObjesi: {fileID: 0}
+  "\u015FifreGirmeObjesi": {fileID: 0}
+  "se\xE7eneklerObjesi": {fileID: 0}
+  "\u015FalterEkAray\xFCzObjesi": {fileID: 2086188922}
+--- !u!114 &2086188925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086188922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2086188926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086188922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &2086188927
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086188922}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 1
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &2109041686
 GameObject:
   m_ObjectHideFlags: 0
