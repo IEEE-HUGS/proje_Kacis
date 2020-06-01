@@ -83,6 +83,8 @@ public class arayüzEtkileşim : MonoBehaviour
         Debug.Log("Havalandırma kapatıldı.");
     }
 
+    //Şalter
+    public GameObject şalterEkArayüzObjesi;
 
     public void ArayüzAç(bool[] kontrol) //etki alanındaki obje adı
     {
@@ -109,9 +111,5 @@ public class arayüzEtkileşim : MonoBehaviour
         şalterEkArayüzObjesi.gameObject.SetActive(false); //arayüzü görünmez kılar
         oyuncuHareketYazışık.hareketHızı = oyuncuHareketYazışık.varsayılanHareketHızı; //arayüzü kapatınca karakterin hareket etme yetisini geri kazandırır.
     }
-
-    //Şalter
-    public GameObject şalterEkArayüzObjesi;
-
 
 }

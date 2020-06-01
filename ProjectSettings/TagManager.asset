@@ -7,6 +7,8 @@ TagManager:
   - etkiObje
   - etkiManken
   - "etkiAray\xFCz"
+  - oyuncu
+  - engel
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - "Oyun D\u0131\u015F\u0131"
   - 
   - 
   - 
